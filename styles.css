@@ -1,0 +1,142 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	
+	vertical-align: baseline;
+}
+
+body {
+    display: flex;
+}
+.sidebar{
+    position: relative;
+}
+#sidepic{
+    overflow: hidden;
+    height: 100vh;
+    max-width: 40vw;
+    
+}
+
+.logo{
+    position: absolute;
+    top: 320px;
+    display: flex;
+    background-color:black;
+    opacity: 60%;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    height: 2em;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    padding-top: 1em
+
+    
+}
+top,
+bottom{
+    
+    height: calc(100vh/3);
+}
+form{
+    height: calc((100vh/3));
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+
+}
+
+legend{
+    position: absolute;
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+fieldset{
+    background-color: rgb(221, 233, 221);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    border: 0;
+    position: relative;
+    height: 100%;
+    box-shadow: 0px 0px 10px 1px black ;
+    margin-right: -1rem;
+}
+
+button{
+    position:absolute;
+    top: 600px;
+    left: 50px;
+}
+
+img{
+    overflow: hidden;
+}
+
+label{
+
+}
+
+input{
+    border-radius: 0.5em;
+    height: 2em;
+
+}
+.inputs {
+    margin-top: 7px;
+    margin-left: -4px;
+    padding-top: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input:focus {
+    outline: none;
+    border-color: #665df5;
+    box-shadow: 0 0 2px #665df5;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 8px;
+    padding : 17px 30px 17px 30px;
+    font-size: 1em;
+    background-color: #665df5;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -5px;
+    transition: background-color .2s ease-in;
+}
+
+button:hover {
+    background-color: #544af4;
+}

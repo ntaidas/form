@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <form>
-        
-    </form>
+    <div class="sidebar">
+        <img id="sidepic" src="side.jpg" alt="some plant in a jungle">
+        <div class="logo">Fire Lounge</div>
+    </div>
+    <div class="main">
+        <top>
+            <p>This is a <em>real</em> members club for the really exclusive people.</p> 
+        </top>
+        <form action="get">
+            <fieldset>
+                <legend>Let's do this</legend>
+                <div class="inputs">
+                    <label for="name">NAME</label>
+                    <input name="name" id="name" type="text" minlength="3" maxlength="20"  required>
+                </div>
+                <div class="inputs">
+                    <label for="lastname">LAST NAME</label>
+                    <input name="lastname" id="lastname" type="text" minlength="3" maxlength="20" required>
+                </div>
+                <div class="inputs">
+                    <label for="email">EMAIL</label>
+                    <input name="email" id="email" type="email" required>
+                </div>
+                <div class="inputs">
+                    <label for="tel">PHONE NUMBER</label>
+                    <input name="tel" id="tel" type="tel">
+                </div>
+                <div class="inputs">
+                    <label for="password">PASSWORD</label>
+                    <input name="password" id="password" type="password" required>
+                </div>
+                <div class="inputs">
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input name="confirm" id="confirm" type="password" required>
+                </div>
+                <button>Create Account</button>
+            </fieldset>
+        </form>
+        <bottom><p>Already have an account? <a href="#">Log in</a></p></bottom>
+    </div>
 </body>
 </html>
